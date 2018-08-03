@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from '../../services/info-pagina.service';
+import { InfoPage } from '../../interfaces/info-pagina.interfaces';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public infoPagina: InfoPaginaService) {
+
+
+  }
 
   ngOnInit() {
   }
