@@ -20,6 +20,7 @@ export class InfoProductosService {
 
   private cargarProductos() {
 
+    // tslint:disable-next-line:no-shadowed-variable
     return new Promise ((resolve, reject) => {
       this.http.get('https://angular-html-9ca70.firebaseio.com/productos_idx.json')
           .subscribe((resp: Producto[]) => {
@@ -54,7 +55,6 @@ export class InfoProductosService {
 
       if (categoriaLow.indexOf(terminoLow) >= 0 || tituloLow.indexOf(terminoLow) >= 0) {
         return producto;
-        console.log(this.productosFiltrados);
       }
     });
   }
