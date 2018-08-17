@@ -1425,8 +1425,8 @@ body {
 }
 
 .item-inside-1 {
-    background-position: 50% 100%;
-    background-size: 350%;
+    background-position: 0% 50%;
+    background-size: 200%;
 }
 
 @media (min-width: 40em) {
